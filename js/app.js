@@ -89,24 +89,36 @@ alert("Welcome. Please answer these 5 trivia questions about me! Type 'yes' or '
 //   } else if (response6 === 24){
 //     console.log("That is correct");
 //     alert("Good job! You got it right!");
+//     score +=1;
 //     break;
 //   } else {
 //     alert("Please enter a number.");
 //     console.log("Not a number");
 //   }
 // }
-// 
-// //Question 7 
-favAnimals = [platypus, turtle, otter];
-isTrue = false;
-var question7 = "Guess 1 of my 3 favorite animals.";
+//
+// //Question 7
+var favAnimals = ["platypus", "turtle", "otter"];
+var isTrue = false;
+var question7 = "Guess 1 of my 3 favorite animals. (Type in singular)";
 console.log(question7);
-
+for(var i=0;i<3;i++) {
   var response7 = prompt(question7);
   console.log("User responded " + response7);
   for(var j=0; j<favAnimals.length; j++) {
     if( response7 === favAnimals[j]) {
       isTrue = true;
       break;
-    } 
+    }
   }
+  if(isTrue) {
+    console.log("That is correct");
+    alert("Good job! You got it right!");
+    // score +=1;
+    break;
+  } else {
+    alert("You got it wrong. Try again.");
+    console.log("That is incorrect");
+  }
+}
+
