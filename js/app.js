@@ -5,8 +5,7 @@ var score = 0;
 // //
 // //QUESTION1
 var question1 = "Does my family call me Maria?";
-var response1 = prompt(question1);
-response1 = response1.toLowerCase();
+var response1 = prompt(question1).toLowerCase();
 console.log(question1);
 console.log("User responded " + response1);
 if(response1 === "n" || response1 === "no") {
@@ -20,7 +19,7 @@ if(response1 === "n" || response1 === "no") {
 //
 //QUESTION2
 var question2 = "Is my favorite animal one that I have never seen?";
-var response2 = prompt(question2);
+var response2 = prompt(question2).toLowerCase();
 console.log(question2);
 console.log("User responded " + response2);
 if(response2 === "y" || response2 === "yes") {
@@ -34,7 +33,7 @@ if(response2 === "y" || response2 === "yes") {
 //
 //QUESTION3
 var question3 = "Do I think bugs are cute?";
-var response3 = prompt(question3);
+var response3 = prompt(question3).toLowerCase();
 console.log(question3);
 console.log("User responded " + response3);
 if(response3 === "n" || response3 === "no") {
@@ -48,7 +47,7 @@ if(response3 === "n" || response3 === "no") {
 //
 //QUESTION4
 var question4 = "Do I like watching sports?";
-var response4 = prompt(question4);
+var response4 = prompt(question4).toLowerCase();
 console.log(question4);
 console.log("User responded " + response4);
 if(response4 === "n" || response4 === "no") {
@@ -62,7 +61,7 @@ if(response4 === "n" || response4 === "no") {
 //
 //QUESTION 5
 var question5 = "Do I like participating in sports?";
-var response5 = prompt(question5);
+var response5 = prompt(question5).toLowerCase();
 console.log(question5);
 console.log("User responded " + response5);
 if(response5 === "y" || response5 === "yes") {
@@ -110,7 +109,7 @@ var isTrue = false;
 var question7 = "Guess 1 of my 3 favorite animals. (Type in singular)";
 console.log(question7);
 for(var i=0;i<6;i++) {
-  var response7 = prompt(question7);
+  var response7 = prompt(question7).toLowerCase();
   console.log("User responded " + response7);
   for(var j=0; j<favAnimals.length; j++) {
     if( response7 === favAnimals[j]) {
