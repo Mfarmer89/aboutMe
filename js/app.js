@@ -35,7 +35,7 @@ function playQuiz() {
 
   //Question 6
   function guessNumber() {
-    var question6 = "At what age did I first do a handstand?";
+    var question6 = "At what age did I first do a handstand? (You have 4 tries)";
     var answer6 = 25;
     console.log(question6);
     for(var i=0; i<4; i++) {
@@ -49,7 +49,7 @@ function playQuiz() {
       } else if(i===3 && response6 < answer6) {
         alert("Too low. Next question.");
         console.log("That is incorrect");
-      } else if (1===3 && response6 > answer6) {
+      } else if (i===3 && response6 > answer6) {
         alert("Too high. Next question.");
         console.log("That is incorrect");
       } else if (response6 > answer6) {
@@ -70,7 +70,7 @@ function playQuiz() {
   function guessFavorites() {
     var favAnimals = ["platypus", "turtle", "otter"];
     var isTrue = false;
-    var question7 = "Guess 1 of my 3 favorite animals. (Type in singular)";
+    var question7 = "Guess 1 of my 3 favorite animals. (Type in singular) You have 6 tries.";
     console.log(question7);
     for(var i=0;i<6;i++) {
       var response7 = prompt(question7).toLowerCase();
@@ -87,7 +87,7 @@ function playQuiz() {
         score +=1;
         break;
       } else if (i === 5) {
-        alert("That is incorrect.");
+        alert("That is incorrect. The answers are: Platypus, Otter, Turtle");
         console.log("That is incorrect");
       } else {
         alert("You got it wrong. Try again.");
