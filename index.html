@@ -9,11 +9,22 @@
     <title>Lab 2</title>
   </head>
   <body>
+
     <header>
       <h1 id="name">Maria-Elena Farmer</h1> 
+      <nav>
+        <ul>
+          <a href="/" class="active">Home</a>
+          <a onclick="playQuiz()">Play 'About Me' Quiz</a">
+          <!-- <a href="/">See charity pages I support</a> -->
+          <a href="#contact">See my work on Github</a>
+        </ul>
+      </nav>
     </header>
+
     <main>
       <div class="container">
+
         <!-- Left side div -->
         <div class="block">
           <h1>Fun Things About Me</h1>
@@ -42,22 +53,12 @@
               </ul>
             </li>
           </ol>
-          <!-- <div id="game">
-            <h2>Fun Game</h2>
-            <ol>
-              <li>Does my family call me Maria?</li>
-              <li>Is my favorite animal one that I have never seen?</li>
-              <li>Do I think bugs are cute?</li>
-              <li>Do I like watching sports?</li>
-              <li>Do I like participating in sports?</li>
-            </ol>
-            
-          </div> -->
+
           <div id="controls">
             <button onclick="playQuiz()">Play My Quiz</button>
           </div>
-
         </div>
+
         <!-- Right side div -->
         <div class="block">
           <h1>My Story</h1>
@@ -68,9 +69,11 @@
         </div>
       </div>
     </main>
-    <footer>
-      Course 201 with Source Code at Ten Habitat in Bridgetown, Barbados.
+
+    <footer id="contact">
+      <p>Github: <a href="https://github.com/Mfarmer89/" target="_blank">Mfarmer89</a></p>
     </footer>
+
     <script src="js/app.js"></script>
   </body>
 </html>
