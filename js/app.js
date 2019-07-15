@@ -87,7 +87,7 @@ function playQuiz() {
         score +=1;
         break;
       } else if (i === 5) {
-        alert("That is incorrect. The answers are: Platypus, Otter, Turtle");
+        alert(`That is incorrect. The answers are: ${favAnimals.join(", ")}.`);
         console.log("That is incorrect");
       } else {
         alert("You got it wrong. Try again.");
